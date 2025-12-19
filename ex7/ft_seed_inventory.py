@@ -1,5 +1,8 @@
 
 def ft_seed_inventory(item: str, quantity: int, unit: str) -> None:
+    '''
+    Display the seed inventory passing in params
+    '''
     final_unit = ""
     res = f"{item[0].upper()}{item[1:]} seeds: "
     if unit == "packets":
