@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 def ft_seed_inventory(item: str, quantity: int, unit: str) -> None:
     '''

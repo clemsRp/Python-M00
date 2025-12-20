@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 def ft_harvest_total():
     '''
