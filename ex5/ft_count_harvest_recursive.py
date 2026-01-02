@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 
-def count_recursive(days):
+def ft_count_harvest_recursive(days=None):
+    prev_days = days
+    if prev_days is None:
+        days = int(input("Days until harvest: "))
+
     if days > 1:
-        count_recursive(days - 1)
+        ft_count_harvest_recursive(days - 1)
+
     if days > 0:
         print("Day", days)
 
-
-def ft_count_harvest_recursive():
-    '''
-    Count recursively the number of days since harvest,
-    using the count_recursive function
-    '''
-    days = int(input("Days until harvest: "))
-    count_recursive(days)
-    print("Harvest time!")
+    if prev_days is None:
+        print("Harvest time!")
